@@ -1,0 +1,25 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Generic Key Value",
+	"patterns": [{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"match": "^(\\s)*(#).*$\\n?",
+				"name": "comment"
+			},
+			{
+				"match": "\\$\\w+",
+				"name": "variable.language"
+			},
+			{
+				"match": "^\\s*(\\w+)",
+				"name": "keyword"
+			}]
+		}
+	},
+	"scopeName": "source.key_value"
+}

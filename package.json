@@ -1,0 +1,36 @@
+{
+    "name": "vscode-generic-key-value-syntax-highlight",
+    "displayName": "Generic Key-Value Syntax Highlight",
+    "description": "Turns the first word in a line into a keyword or a #comment",
+    "version": "1.0.1",
+    "publisher": "icetbr",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "key-value",
+                "extensions": [
+                    ".conf"
+                ],
+                "aliases": [
+                    "Key Value"
+                ]
+            }
+        ],
+        "grammars": [{
+            "language": "key-value",
+            "scopeName": "source.key_value",
+            "path": "./syntaxes/key-value.tmLanguage.json"
+        }]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/icetbr/vscode-generic-key-value-syntax-highlight"
+    }
+}
