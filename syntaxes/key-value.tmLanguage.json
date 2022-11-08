@@ -16,7 +16,7 @@
 				"name": "variable.language"
 			},
 			{
-				"match": "^\\s*(\\w+)",
+				"match": "^\\s*([^\\s:=]+)",
 				"name": "keyword"
 			}]
 		}
